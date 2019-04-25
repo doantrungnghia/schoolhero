@@ -1,6 +1,9 @@
 html {
   font-family: "Inter", sans-serif;
 }
+a {
+  color: #515151;
+}
 .radis-4 {
   border-radius: 4px 4px 0 0;
 }
@@ -41,7 +44,9 @@ html {
 .mg-0 {
   margin: 0;
 }
-
+.mg-0-auto {
+  margin: 0 auto;
+}
 .bg-white {
   background-color: white;
 }
@@ -82,6 +87,9 @@ html {
   font-weight: 500;
   font-size: 60px;
   line-height: normal;
+}
+.font-18 {
+  font-size: 18px !important;
 }
 .content-left.click {
   display: block !important;
@@ -242,8 +250,6 @@ header .header-avt {
   font-size: 16px;
   color: #515151;
 }
-section.traffic {
-}
 .traffic .traffic-item {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
@@ -254,16 +260,24 @@ section.traffic {
   margin-right: 20px;
   border-radius: 4px;
 }
-
-.traffic-item .traffic-txt {
-}
 .traffic-item .traffic-txt span {
   display: block;
 }
 .traffic-item .traffic-img {
   margin-right: 10px;
 }
-.major .small-title {
+.major {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+.program {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+.major .small-title,
+.program .small-title,
+.subject .small-title,
+.setting .small-title {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -279,30 +293,51 @@ section.traffic {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
-.major .major-row {
+.major .major-row,
+.program .program-row,
+.subject .subject-row,
+.setting .setting-row {
   padding: 16px 24px;
 }
-.major .major-row:nth-child(2n + 1) {
+.major .major-row:nth-child(2n + 1),
+.program .program-row:nth-child(2n + 1),
+.subject .subject-row:nth-child(2n + 1),
+.setting .setting-row:nth-child(2n + 1) {
   background-color: #f7f7f7;
 }
-.major .major-row:nth-child(2n) {
+.major .major-row:nth-child(2n),
+.program .program-row:nth-child(2n),
+.subject .subject-row:nth-child(2n),
+.setting .setting-row:nth-child(2n) {
   background-color: #ffffff;
 }
-.major .major-footer {
+.major .major-footer,
+.program .program-footer,
+.subject .subject-footer,
+.setting .setting-footer {
   padding: 23px 82px;
   background-color: white;
 }
-.major .major-footer ul.major-list {
+.major .major-footer ul.major-list,
+.program .program-footer ul.program-list,
+.subject .subject-footer ul.program-list,
+.setting .setting-footer ul.program-list {
   margin: 0 auto;
 }
-.major .major-footer ul li {
+.major .major-footer ul li,
+.program .program-footer ul li,
+.subject .subject-footer ul li,
+.setting .setting-footer ul li {
   display: inline-block;
   padding: 10px 20px;
   background: #efeff1;
   border-radius: 16px;
   transition: 0.5s;
 }
-.major .major-footer ul li:hover {
+.major .major-footer ul li:hover,
+.program .program-footer ul li:hover,
+.subject .subject-footer ul li:hover,
+.setting .setting-footer ul li:hover {
   background: #7cbc67;
   color: white;
 }
@@ -338,8 +373,6 @@ section.traffic {
 .library .carousel-right {
   right: -15px;
 }
-.library .carousel-left {
-}
 .library .library-wrapper .library-item {
   max-width: calc(100% / 4);
 }
@@ -365,4 +398,127 @@ section.traffic {
 }
 .library .relative {
   position: relative;
+}
+/********************CSS ADMIN PAGE 2,major,program,subject **************/
+.line {
+  height: 2px;
+  background: #e1e1e1;
+  margin: 24px 0px;
+}
+.basic-title,
+.description-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+.basic-small-title,
+.description-small-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #b1b1b1;
+  margin: 24px 0px 8px 19px;
+}
+.basic-small-title:first-child,
+.description-small-title:first-child {
+  margin-top: 0px;
+}
+.basic-txt,
+.description-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #515151;
+}
+.basic-white-padding,
+.description-white-padding {
+  padding: 14px 0 10px 19px;
+  background-color: white;
+}
+.btn-update {
+  background: #e3f9e5;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #7cbc67;
+  padding: 15px 49px 11px 49px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.btn-update:hover {
+  color: #e3f9e5;
+  background-color: #7cbc67;
+  border: 1px solid #7cbc67;
+}
+.btn-new {
+  background: #7cbc67;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 9px 16px;
+  transition: 0.5s;
+}
+.btn-new:hover {
+  color: #7cbc67;
+  background: #ffffff;
+  border: 1px solid #7cbc67;
+}
+.btn-edit,
+.btn-del {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline;
+}
+.btn-edit {
+  color: #2d9cdb;
+  margin-right: 10px;
+}
+.btn-del {
+  color: #eb5757;
+}
+.text-over {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/****  CSS SETTING PAGE*******/
+.setting-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #515151;
+  margin-bottom: 15px;
+}
+.setting .social {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: inline;
+}
+.setting .facebook {
+  color: #4267b2;
+}
+.setting .twitter {
+  color: #00acee;
+}
+/*********ADMIN LIST */
+.admin-list {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
 }

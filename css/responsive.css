@@ -55,6 +55,125 @@
     margin: 15px 0px;
   }
 }
+@media (max-width: 576px) {
+  .row.major-row div {
+    padding-left: 0px;
+  }
+  .row.major-row div:nth-child(1) {
+    width: 20%;
+  }
+  .row.major-row div:nth-child(2) {
+    width: 20%;
+  }
+  .row.major-row div:nth-child(3) {
+    width: 30%;
+  }
+  .row.major-row div:nth-child(4) {
+    width: 10%;
+  }
+  .row.major-row div:nth-child(5) {
+    width: 20%;
+  }
+  /*row program*/
+  .row.program-row div {
+    padding-left: 0px;
+  }
+  .row.program-row div:nth-child(1) {
+    width: 20%;
+  }
+  .row.program-row div:nth-child(2) {
+    width: 25%;
+  }
+  .row.program-row div:nth-child(3) {
+    width: 15%;
+  }
+  .row.program-row div:nth-child(4) {
+    width: 10%;
+  }
+  .row.program-row div:nth-child(5) {
+    width: 10%;
+  }
+  .row.program-row div:nth-child(6) {
+    width: 10%;
+  }
+  .row.program-row div:nth-child(7) {
+    width: 10%;
+  }
+  /*********SUBJECT ROW**********/
+  .row.subject-row div {
+    padding-left: 0px;
+  }
+  .row.subject-row div:nth-child(1) {
+    width: 20%;
+  }
+  .row.subject-row div:nth-child(2) {
+    width: 10%;
+  }
+  .row.subject-row div:nth-child(3) {
+    width: 20%;
+  }
+  .row.subject-row div:nth-child(4) {
+    width: 25%;
+  }
+  .row.subject-row div:nth-child(5) {
+    width: 10%;
+  }
+  .row.subject-row div:nth-child(6) {
+    width: 15%;
+  }
+  .major-row .small-title,
+  .program-row .small-title {
+    font-size: 10px;
+  }
+  .major-row div,
+  .program-row div {
+    font-size: 13px;
+  }
+  .row.major-footer,
+  .row.program-footer,
+  .row.setting-footer,
+  .row.subject-footer {
+    padding: 23px 0px;
+  }
+  .row.major-footer .major-list li,
+  .row.program-footer .program-list li,
+  .row.setting-footer .setting-list li,
+  .row.subject-footer .subject-list li {
+    padding: 5px 10px;
+  }
+  .content .content-right {
+    padding: 24px 0px;
+  }
+  .content-right .setting-title:first-child {
+    margin-left: 10px;
+  }
+  .admin-list .row.setting-row,
+  .btn-edit,
+  .btn-del {
+    font-size: 12px;
+  }
+   {
+    font-size: 13px;
+  }
+  .admin-list .row.setting-row .setting-item-1 {
+    width: 10%;
+  }
+  .admin-list .row.setting-row .setting-item-2 {
+    width: 20%;
+  }
+  .admin-list .row.setting-row .setting-item-3 {
+    width: 15%;
+  }
+  .admin-list .row.setting-row .setting-item-4 {
+    width: 20%;
+  }
+  .admin-list .row.setting-row .setting-item-5 {
+    width: 15%;
+  }
+  .admin-list .row.setting-row .setting-item-6 {
+    width: 20%;
+  }
+}
 @media (max-width: 375px) {
   header .header-input {
     width: 50%;
