@@ -99,6 +99,20 @@
   .row.program-row div:nth-child(7) {
     width: 10%;
   }
+  /*ROW PROGRAM 2*/
+  .program_2 .row.program-row div:nth-child(1) {
+    width: 20%;
+  }
+  .program_2 .row.program-row div:nth-child(2) {
+    width: 40%;
+  }
+  .program_2 .row.program-row div:nth-child(3) {
+    width: 20%;
+  }
+  .program_2 .row.program-row div:nth-child(4) {
+    width: 18%;
+    margin-left: 2%;
+  }
   /*********SUBJECT ROW**********/
   .row.subject-row div {
     padding-left: 0px;
@@ -173,9 +187,16 @@
   .admin-list .row.setting-row .setting-item-6 {
     width: 20%;
   }
+  section.library {
+    padding: 0 15px;
+  }
 }
 @media (max-width: 375px) {
   header .header-input {
     width: 50%;
+  }
+  .major_2 .btn-cancel,
+  .btn-new {
+    padding: 10px 20px;
   }
 }
