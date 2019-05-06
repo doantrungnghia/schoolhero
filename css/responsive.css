@@ -190,6 +190,9 @@
   section.library {
     padding: 0 15px;
   }
+  .upload-wrapper .upload-img img {
+    width: 30%;
+  }
 }
 @media (max-width: 375px) {
   header .header-input {

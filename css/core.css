@@ -4,6 +4,9 @@ html {
 a {
   color: #515151;
 }
+a:hover {
+  text-decoration: none;
+}
 input {
   width: 100%;
   border-radius: 4px;
@@ -197,6 +200,9 @@ header .header-avt {
   height: 48px;
   display: inline-block;
   margin-right: 26px;
+}
+.content .content-left .dash-board-item:hover {
+  background: #e3f9e5;
 }
 .content .content-right {
   padding: 24px;
@@ -584,7 +590,6 @@ input::-ms-input-placeholder,
 input::-ms-input-placeholder {
   color: #b1b1b1;
 }
-
 .program_2 .suggestion .btn-new {
   padding: 9px 0px;
   width: 48%;
@@ -593,4 +598,47 @@ input::-ms-input-placeholder {
   border-bottom-left-radius: 0px;
   min-height: 32px;
   float: left;
+}
+/*****GALLERY */
+.upload-wrapper {
+  background-color: white;
+  padding: 27px 19px;
+  padding-bottom: 27px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
+}
+.upload-wrapper .upload-item img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.upload-wrapper .upload-img {
+  border: 2px dashed #b1b1b1;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.upload-wrapper .upload-img img {
+  width: 10%;
+}
+.btn-new-album {
+  padding: 15px 32px;
+  background: #e3f9e5;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px; /* identical to box height */
+  text-transform: uppercase;
+  color: #7cbc67;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.btn-new-album:hover {
+  color: white;
+  border: 1px solid #7cbc67;
+  background-color: #7cbc67;
 }
